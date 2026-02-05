@@ -1,0 +1,773 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+  --main-color: white;
+}
+
+.padding {
+    padding: 0 165px;
+}
+
+header {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerlogo {
+    display: flex;
+    align-items: center;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #2C2D35;
+}
+
+.mobile-nav-bar {
+    display: none;
+    padding: 10px 165px;
+}
+
+.menu-trigger-btn {
+    background-color: #515dcc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: "Raleway", sans-serif;
+    cursor: pointer;
+}
+
+.mobile-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.mobile-link {
+    font-size: 24px !important;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.pad {
+    margin-left: 40px;
+}
+
+.lan {
+    margin-right: 40px;
+}
+
+.text {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.onas {
+    text-decoration: none;
+    color: #2C2D35;
+    transition: 0.5s;
+}
+
+.onas:hover {
+    color: #515dcc;
+    font-weight: 550;
+}
+
+.onas:active {
+    color: #001aff;
+    font-weight: 700;
+}
+
+.sect_meropri {
+    display: flex;
+    flex-direction: row;
+}
+
+.sect_meropri div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.h1 {
+    font-size: 60px;
+    width: 540px;
+    height: 132px;
+    padding-bottom: 20px;
+}
+
+.violet {
+    color: rgb(114, 7, 236);
+}
+
+.slavtext {
+    color: #868892;
+    font-size: 18px;
+    width: 540px;
+    padding-bottom: 60px;
+}
+
+.saitslav {
+    color: #0602ff;
+    border: solid 1px #4c4ba1;
+    padding: 21px 60px;
+    text-decoration: none;
+    transition: 0.5s;
+    width: 155px;
+}
+
+.saitslav:hover {
+    color: var(--main-color);
+    background-color: #908fbe;
+}
+
+.saitslav:active {
+    color: var(--main-color);
+    background-color: #3700ff;
+}
+
+.galereyatext {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.galereyatext:hover {
+    background-color: #71318a;
+    color: var(--main-color);
+}
+
+.galereyatext:active {
+    background-color: #a200ff;
+    color: var(--main-color);
+}
+
+.meropriyatiyatext {
+    display: flex;
+    font-size: 40px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.godiki {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.goda1 {
+    width: 86px;
+    height: 23px;
+    margin-left: 32px;
+    color: #000000;
+    background-color: #9ca8df;
+    transition: 0.3s;
+    padding: 15px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.goda1:hover {
+    color: var(--main-color);
+    background-color: #0400fd;
+}
+
+.goda1:active {
+    color: var(--main-color);
+    background-color: #083391;
+}
+
+.Card {
+    width: 310px;
+    height: 422px;
+}
+
+.firstText {
+    color: #777777;
+    width: 310px;
+    font-size: 18px;
+}
+
+.secondText {
+    color: #777777;
+    width: 310px;
+    font-size: 18px;
+}
+
+.thirdText {
+    color: #86928B;
+    width: 310px;
+    font-size: 18px;
+}
+
+.fourthText {
+    color: #86928B;
+    width: 310px;
+    font-size: 18px;
+}
+
+.fifthText {
+    color: #86928B;
+    width: 310px;
+    font-size: 18px;
+}
+
+.sixthText {
+    color: #86928B;
+    width: 310px;
+    font-size: 18px;
+}
+
+.year-block {
+    display: flex;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.7s ease;
+}
+
+.year-block.active {
+    display: block;
+    opacity: 1;
+}
+
+.card {
+    padding: 20px 20px 30px 20px;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.video {
+    height: 1000%;
+    width: 100%;
+}
+
+.otbor {
+    background-image: url("../img/back.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 574px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.otbor div {
+    width: 40%;
+    margin-right: 165px;
+}
+
+.otbortext {
+    font-size: 30px;
+    padding-bottom: 60px;
+    color: #fff;
+}
+
+.violet1 {
+    color: rgb(0, 255, 242);
+    font-weight: 1000;
+    font-size: 32px;
+}
+
+.otborbutton {
+    text-decoration: none;
+    color: black;
+    padding: 20px 60px;
+    background-color: violet;
+    transition: 0.5s;
+}
+
+.otborbutton:hover {
+    background-color: rgb(240, 164, 240);
+}
+
+.otborbutton:active {
+    background-color: rgb(230, 62, 230);
+}
+
+.Iscustvo {
+    width: 40%;
+    height: 40%;
+}
+
+.h2 {
+    font-size: 60px;
+}
+
+.teams {
+    display: flex;
+    margin-top: 70px;
+}
+
+.foto {
+    padding-top: 20px;
+}
+
+.ya,
+.Darya {
+    padding-right: 30px;
+}
+
+.numbertext {
+    color: #9c9c9c;
+}
+
+.textfooter1 {
+    font-size: 16px;
+    text-decoration: none;
+    color: #777777;
+    transition: 0.4s;
+}
+
+.textfooter1:hover {
+    color: #4251d6;
+}
+
+.textfooter1:active {
+    color: #1a2161;
+}
+
+.menu-trigger-btn {
+    display: none;
+    background-color: #515dcc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: "Raleway", sans-serif;
+    cursor: pointer;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    width: 320px;
+    border-radius: 10px;
+}
+
+.close {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.formopen {
+    background-color: #001aff;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    color: var(--main-color);
+    transition: 0.5s;
+}
+
+.formopen:hover {
+    background-color: #979edd;
+    color: #000;
+}
+
+.formopen:active {
+    background-color: #fdfdfd;
+    color: #000;
+}
+
+.formopen1 {
+    width: 200px;
+    background-color: #001aff;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    color: var(--main-color);
+    transition: 0.5s;
+}
+
+.formopen1:hover {
+    background-color: #979edd;
+    color: #000;
+}
+
+.formopen1:active {
+    background-color: #fdfdfd;
+    color: #000;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(30px);
+    transition: all 1s ease-out;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+@media (max-width: 690px) {
+    .bazarpng {
+        width: 330px;
+        height: 380px;
+    }
+
+    .h1 {
+        font-size: 30px;
+        width: 300px;
+        height: 100px;
+        padding-bottom: 0px;
+    }
+
+    .otbortext {
+        font-size: 20px;
+    }
+
+    .violet1 {
+        font-size: 25px;
+    }
+
+    .padding {
+        padding: 0px 10px;
+    }
+
+    .Card {
+        width: 200px;
+    }
+
+    .firstText,
+    .secondText,
+    .thirdText,
+    .fourthText,
+    .fifthText,
+    .sixthText {
+        width: 200px;
+        font-size: 12px;
+    }
+
+    .Iscustvo {
+        padding-top: 3%;
+        width: 40%;
+    }
+
+    .h2 {
+        font-size: 40px;
+    }
+
+    .textlast {
+        font-size: 12px;
+    }
+
+    .card {
+        padding: 10px 10px 20px 10px;
+    }
+
+    .otbor {
+        width: 100%;
+        background-image: linear-gradient(#6e4aff, #a200ffec);
+    }
+
+    .onas {
+        font-size: 16px;
+    }
+
+    .slavtext {
+        width: 300px;
+    }
+}
+
+@media (max-width: 320px) {
+    #navModal {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(8px);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-modal-content {
+        background: white;
+        width: 80%;
+        max-width: 280px;
+        border-radius: 20px;
+        padding: 40px 20px;
+        position: relative;
+        text-align: center;
+    }
+
+    .close-nav {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        font-size: 30px;
+        cursor: pointer;
+        color: #333;
+    }
+
+    .mobile-links {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .mobile-link {
+        text-decoration: none;
+        color: #2C2D35;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "Raleway", sans-serif;
+    }
+
+    .padding {
+        padding: 0 15px !important;
+    }
+
+    .desktop-menu {
+        display: none !important;
+    }
+
+    header {
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .headerlogo {
+        width: 100%;
+    }
+
+    .slav {
+        font-size: 18px;
+    }
+
+    .sect_meropri {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sect_meropri div {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .bazarpng {
+        width: 100%;
+        max-width: 260px;
+        height: auto;
+    }
+
+    .h1 {
+        font-size: 26px !important;
+        width: 100% !important;
+        height: auto !important;
+        line-height: 1.2;
+    }
+
+    .slavtext {
+        width: 100% !important;
+        font-size: 15px !important;
+        margin-bottom: 30px;
+    }
+
+    .line {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100% !important;
+        padding: 0 !important;
+        margin-bottom: 30px;
+    }
+
+    .Card {
+        width: 100% !important;
+        height: auto !important;
+        object-fit: cover;
+    }
+
+    .firstText,
+    .secondText,
+    .thirdText,
+    .fourthText,
+    .fifthText,
+    .sixthText {
+        width: 100% !important;
+        font-size: 14px !important;
+        padding: 10px 0;
+    }
+
+    .otbor {
+        height: auto;
+        padding: 60px 20px;
+        background-position: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .otbor div {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .otbortext {
+        font-size: 20px !important;
+        width: 280px;
+    }
+
+    .violet1 {
+        font-size: 22px !important;
+    }
+
+    .teams {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Iscustvo {
+        width: 90% !important;
+        height: auto !important;
+        margin-bottom: 20px;
+    }
+
+    .h2 {
+        font-size: 32px !important;
+    }
+
+    .textlast {
+        font-size: 14px !important;
+    }
+
+    .menu-trigger-btn {
+        display: block !important;
+    }
+
+    .foto {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .foto img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .godiki {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .meropriyatiyatext {
+        font-size: 24px !important;
+        text-align: center;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        margin-left: 0 !important;
+    }
+
+    .goda1 {
+        margin-left: 0 !important;
+        width: 70px !important;
+        height: 35px !important;
+        font-size: 14px;
+    }
+
+    .textlast {
+        width: 300px;
+    }
+
+    .otbor {
+        width: 100%;
+    }
+}

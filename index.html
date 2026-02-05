@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap');
+    </style>
+    <title>Витебск</title>
+</head>
+
+<body>
+    <header class="padding hidden">
+    <div class="headerlogo">
+        <img src="img/_LeVFgdmoWc.WebP" class="logo" alt="Логотип Славянского базара">
+        <h2 class="text slav">Славянский базар</h2>
+    </div>
+
+    <button id="openNavBtn" class="menu-trigger-btn">Меню</button>
+
+    <nav class="nav-menu desktop-menu" id="navMenu">
+        <ul>
+            <li><a href="#Meropri" class="text onas lan">Мероприятия</a></li>
+            <li><a href="https://ddm.edunp.by/%D0%BE-%D0%BD%D0%B0%D1%81/%D0%BD%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B8" class="text onas">Наши новости</a></li>
+            <li><a href="https://ddm.edunp.by/" class="text onas pad">О нас</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div id="navModal" class="modal">
+    <div class="nav-modal-content">
+        <span class="close-nav">&times;</span>
+        <div class="mobile-links">
+            <a href="#Meropri" class="mobile-link">Мероприятия</a>
+            <a href="https://ddm.edunp.by/%D0%BE-%D0%BD%D0%B0%D1%81/%D0%BD%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B8" class="mobile-link">Наши новости</a>
+            <a href="https://ddm.edunp.by/" class="mobile-link">О нас</a>
+        </div>
+    </div>
+</div>
+
+    <main>
+        <section class="sect_meropri padding hidden">
+            <img src="img/SlavicBazaar.WebP" alt="Славянский базар" class="bazarpng">
+            <div>
+                <h1 class="h1 text"><span class="violet">Славянский базар</span> в Витебске</h1>
+                <p class="text slavtext">Ежегодный международный фестиваль искусств, который проходит в Витебске с 1992
+                    года.
+                </p>
+                <a class="saitslav text" href="https://fest-sbv.gck.by/" target="_blank">Сайт фестиваля</a>
+            </div>
+        </section>
+
+        <section class="padding hidden">
+            <h1><a class="text galereyatext"
+                    href="https://fest-sbv.gck.by/galereia-mezhdunarodnogo-festivalia-iskusstv-slavianskii-bazar-v-vitebske/">Галерея
+                    мероприятий</a></h1>
+            <div class="godiki" id="Meropri">
+                <p class="text meropriyatiyatext">Года мероприятий</p>
+
+                <div class="buttons">
+                    <button class="goda1" onclick="showYear('2025')">2025</button>
+                    <button class="goda1" onclick="showYear('2024')">2024</button>
+                    <button class="goda1" onclick="showYear('2023')">2023</button>
+                </div>
+            </div>
+
+            <div id="year2025" class="year-block active">
+                <div class="line">
+                    <div class="card">
+                        <img src="img/2025годпервое.WebP" class="Card" alt="Люди стоят с майками">
+                        <p class="text firstText">ЖЕРЕБЬЕВКА XXIII МЕЖДУНАРОДНОГО ДЕТСКОГО МУЗЫКАЛЬНОГО КОНКУРСА ”ВИТЕБСК“</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/2025годвторое.WebP" class="Card" alt="Выставка картин">
+                        <p class="text secondText">ПРЭЗЕНТАЦЫЯ ВЫСТАВЫ ЖЫВЫХ КАРЦІН ”ЗА ДЗЕНЬ НАСТУПНЫ ЎСЯЕ ЗЯМЛІ“</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/2025годтретье.WebP" class="Card" alt="Танцы">
+                        <p class="text thirdText">VII МЕЖДУНАРОДНЫЙ ТАНЦЕВАЛЬНЫЙ ПРОЕКТ ”DREAM DANCE FEST“</p>
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="card">
+                        <img src="img/2025годчетвёртое.WebP" class="Card" alt="Цимбалы">
+                        <p class="text fourthText">ПРЕЗЕНТАЦИЯ ВЫСТАВОЧНОГО ПРОЕКТА ”КРАСОТА И ВЕЛИЧИЕ НАРОДНОГО КОСТЮМА“</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/2025годпятое.WebP" class="Card" alt="Васильки">
+                        <p class="text fifthText">XXIII МЕЖДУНАРОДНЫЙ ДЕТСКИЙ МУЗЫКАЛЬНЫЙ КОНКУРС ”ВИТЕБСК“.</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/2025годшестое.WebP" class="Card" alt="Музыканты">
+                        <p class="text sixthText">КОНЦЕРТ-СПЕКТАКЛЬ ”МАСТЕР И МАНДОЛИНА“</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="year2024" class="year-block" style="display:none;">
+                <div class="line">
+                    <div class="card">
+                        <img src="img/2024годпервое.WebP" class="Card" alt="Открытие">
+                        <p class="text firstText">ТОРЖЕСТВЕННОЕ ОТКРЫТИЕ</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/2024годвторое.WebP" class="Card" alt="Закрытие">
+                        <p class="text secondText">ТОРЖЕСТВЕННОЕ ЗАКРЫТИЕ XXXIII МЕЖДУНАРОДНОГО ФЕСТИВАЛЯ ИСКУССТВ</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/2024годтретье.WebP" class="Card" alt="Дети">
+                        <p class="text thirdText">ЖЕРЕБЬЁВКА XXII МЕЖДУНАРОДНОГО ДЕТСКОГО МУЗЫКАЛЬНОГО КОНКУРСА</p>
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="card">
+                        <img src="img/2024годчетвёртое.WebP" class="Card" alt="Награда">
+                        <p class="text fourthText">XXII МЕЖДУНАРОДНЫЙ ДЕТСКИЙ МУЗЫКАЛЬНЫЙ КОНКУРС «ВИТЕБСК». День первый</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/2024годпятое.WebP" class="Card" alt="Пение">
+                        <p class="text fifthText">XXII МЕЖДУНАРОДНЫЙ ДЕТСКИЙ МУЗЫКАЛЬНЫЙ КОНКУРС «ВИТЕБСК». День второй</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/2024годшестое1.WebP" class="Card" alt="Танцы">
+                        <p class="text sixthText">XXXIII МЕЖДУНАРОДНЫЙ КОНКУРС ИСПОЛНИТЕЛЕЙ ЭСТРАДНОЙ ПЕСНИ «ВИТЕБСК». День первый</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="year2023" class="year-block" style="display:none;">
+                <div class="line">
+                    <div class="card">
+                        <img src="img/2023годпервое1.WebP" class="Card" alt="Толстой">
+                        <p class="text firstText">ПРЕЗЕНТАЦИЯ ВЫСТАВКИ «УСАДЕБНАЯ КУЛЬТУРА В ТВОРЧЕСТВЕ Л. Н. ТОЛСТОГО И И. Е. РЕПИНА»</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/2023годвторое1.WebP" class="Card" alt="Дипломы">
+                        <p class="text secondText">ТОРЖЕСТВЕННОЕ ЗАКРЫТИЕ XXXIII МЕЖДУНАРОДНОГО ФЕСТИВАЛЯ ИСКУССТВ</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/2023годтретье1.WebP" class="Card" alt="Матрешки">
+                        <p class="text thirdText">ПРЕЗЕНТАЦИЯ ИНТЕРАКТИВНОЙ ВЫСТАВКИ «ПУТЕШЕСТВИЕ МАТРЁШКИ»</p>
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="card">
+                        <img src="img/2023годчетвёртое1.WebP" class="Card" alt="Театр">
+                        <p class="text fourthText">«ТЕАТРАЛЬНЫЕ ВСТРЕЧИ». “ДЗЕЦІ. ВЁРСТЫ”</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/2023годпятое1.WebP" class="Card" alt="Жеребьевка">
+                        <p class="text fifthText">ЖЕРЕБЬЁВКА XXI МЕЖДУНАРОДНОГО ДЕТСКОГО МУЗЫКАЛЬНОГО КОНКУРСА «ВИТЕБСК»</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/2023годшестое1.WebP" class="Card" alt="Пресса">
+                        <p class="text sixthText">ПРЕСС-КОНФЕРЕНЦИЯ V МЕЖДУНАРОДНОГО ТАНЦЕВАЛЬНОГО ПРОЕКТА “DREAM DANCE FEST”</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="otbor hidden">
+            <div>
+                <h1 class="otbortext text">
+                    Ежегодно в рамках подготовки к международным конкурсам
+                    <span class="violet1">«СЛАВЯНСКОГО БАЗАРА В ВИТЕБСКЕ»</span>
+                    проводятся национальные отборочные туры.
+                </h1>
+                <a href="https://fest-sbv.gck.by/news/page/grafik-natsionalnykh-otborov-na-festival-2026-01-28"
+                    class="text otborbutton">Узнать больше</a>
+            </div>
+        </section>
+
+        <section class="padding teams hidden">
+            <img src="img/Искусство.WebP" class="Iscustvo" alt="Искусство">
+            <div>
+                <h1 class="h2 text">Наша команда</h1>
+                <p class="text textlast">
+                    Наша команда очень плодотворно делает работу и как только появляется работа мы её делаем. Значит мы трудолюбивые. Эта работа была сделана за 4 дня. Я её сделал относительно легко. Наша команда делает Web-сайты
+                </p>
+                <div class="foto">
+                    <img src="img/Я.WebP" class="ya" alt="Создатель">
+                    <img src="img/ДарьяСергеевна.WebP" class="Darya" alt="Преподаватель">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer hidden">
+            <div class="column">
+                <p class="number text">+375 29 515-20-06</p>
+                <p class="numbertext text">Разработчик сайта</p>
+            </div>
+            <div class="column">
+                <p class="textfooter text">Мероприятия</p>
+                <a href="#Meropri" onclick="showYear('2025')" class="text textfooter1">2025</a>
+                <a href="#Meropri" onclick="showYear('2024')" class="text textfooter1">2024</a>
+                <a href="#Meropri" onclick="showYear('2023')" class="text textfooter1">2023</a>
+            </div>
+            <div class="column">
+                <p class="textfooter4 text">О нас</p>
+                <a href="https://ddm.edunp.by/%D0%BE-%D0%BD%D0%B0%D1%81/%D0%B4%D0%BE%D1%81%D0%BA%D0%B0-%D0%BF%D0%BE%D1%87%D1%91%D1%82%D0%B0"
+                    class="text textfooter1">Доска почёта</a>
+                <a href="https://ddm.edunp.by/%D0%BE-%D0%BD%D0%B0%D1%81/%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE"
+                    class="text textfooter1">Руководство</a>
+            </div>
+            <div class="column">
+                <button id="openVideoBtn" class="formopen1">Видео о фестивале</button>
+                <button id="openFormBtn" class="formopen">Обратная связь</button>
+            </div>
+        </div>
+    </footer>
+
+    <div id="formModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="text">Форма обратной связи</h2>
+            <form>
+                <label for="name">Имя:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-video">&times;</span>
+            <h2 class="text">Видео</h2>
+            <video height="auto" controls class="video">
+                <source src="Video/История_«Славянского_базара_в_Витебске»._Как_фестиваль_стал_брендом_Беларуси.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+        </div>
+    </div>
+
+    <script src="JS/main.js"></script>
+</body>
+</html>
